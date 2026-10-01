@@ -37,6 +37,8 @@ h1 em{color:var(--a)}
 .chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
 .chips li{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 15px;font-size:.93rem}
 .hero .chips li{font-weight:500}
+.hg{display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:center}
+.ph img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:28px;border:1px solid var(--line);box-shadow:16px 16px 0 color-mix(in srgb,var(--a) 28%,transparent)}
 section{padding:88px 0}
 .k{color:var(--b);font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
 h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.3rem);line-height:1.05;margin:0 0 40px}
@@ -64,6 +66,7 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;text-align:center}
 .js .r{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
 .js .r.v{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.js .r{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+@media(max-width:900px){.hg{grid-template-columns:1fr;gap:36px}.ph{order:-1;max-width:220px}.ph img{box-shadow:10px 10px 0 color-mix(in srgb,var(--a) 28%,transparent)}}
 @media(max-width:700px){nav ul{display:none}.hero{padding:64px 0}section{padding:60px 0}.tl{padding-left:22px}.job:before{left:-32px}.job{padding:22px}.contact{padding:48px 22px}}
 @media print{nav,.cta,.contact .btn{display:none}body{background:#fff;color:#000}.r{opacity:1!important;transform:none!important}}
 </style>
@@ -73,13 +76,15 @@ footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;text-align:center}
 <nav><div class="w"><b>Afonso B. Silva</b>
 <ul><li><a href="#experiencia">Experiência</a></li><li><a href="#formacao">Formação</a></li><li><a href="#competencias">Competências</a></li><li><a href="#contacto">Contacto</a></li></ul></div></nav>
 
-<header class="hero"><div class="w">
+<header class="hero"><div class="w hg"><div class="txt">
   <span class="badge"><i></i>Disponível para novas oportunidades</span>
   <h1>Afonso<br><em>Bernardo</em> Silva</h1>
   <p class="role">Key Account Manager &amp; Gestor Comercial</p>
   <p class="lead">Experiência sólida em gestão comercial, desenvolvimento de carteira de clientes e Key Account Management no setor de grande consumo (FMCG). Foco em resultados, negociação estratégica e parcerias comerciais que crescem.</p>
   <div class="cta"><a class="btn p" href="cv-afonso-bernardo-silva.pdf" download>Descarregar CV em PDF</a><a class="btn s" href="#contacto">Falar comigo</a></div>
   <ul class="chips"><li>Tradicional Trade</li><li>Foodservice</li><li>Gas &amp; Convenience</li><li>Import &amp; Export</li><li>Eventos</li></ul>
+</div>
+  <div class="ph"><img src="foto.jpg" width="640" height="640" alt="Fotografia de Afonso Bernardo Silva" fetchpriority="high"></div>
 </div></header>
 
 <section id="experiencia"><div class="w">
